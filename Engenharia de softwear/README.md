@@ -10,9 +10,9 @@ Oque é engenharia de sortwear? (lousa do professor)
 -Programação+Tempo+Escalabilidade+TradOff
 
 TradOff: Entregar uma coisa por outra. 
-Exemplo: -Ter a portabilidade do java para rodar em vários programas, porém terá uma complexidade maior para SER DESENVOLVIDO. Uma troca euivalente!
-        -Banco do Brazil (2005): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.
-        -
+Exemplo: -Ter a portabilidade do java para rodar em vários programas, porém, terá uma complexidade maior para SER DESENVOLVIDO. Uma troca equivalente!
+        -Banco do Brazil (não usava um linguagem de programação escalonavel): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.
+        -Matematicos usando python para desenvolver sistemas para os ajudarem, porém, é muito lento, assim tendo que adiconar C++ para poder rodar mais facilmente. Dois trabalhos
 
 
 
@@ -42,5 +42,5 @@ Uma das principais ideias que compartilhamos neste livro é que a engenharia de 
 O livro enfatiza três princípios fundamentais que acreditamos que as organizações de software devem ter em mente ao projetar, arquitetar e escrever seu código:"
 
 RESOLUÇÃO DO PENSAMENTO:
-(A FAZER) -14/02/2025
+Bom, levando em consideração a frase dito acima, devemos tratar a enhgeharia e softwear como qualquer outra engenharia, assim adionando normas de estrutura como exemplo, forçano muitos a ja saberem como agir para atender os pontos ditos acimas, manutenção etc.
 
