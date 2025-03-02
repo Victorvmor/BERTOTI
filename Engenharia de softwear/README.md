@@ -1,26 +1,33 @@
-# AULA 01 - (14/02/2025)
-Crie um repositório chamado "bertoti" -> pasta "engenhariadesoftware" -> arquivo "readme.md" e faça as seguintes atividades (já vou comentá-las):
+# **AULA 01 - (14/02/2025)**
+# **Crie um repositório chamado "bertoti" -> pasta "engenhariadesoftware" -> arquivo "readme.md" e faça as seguintes atividades (já vou comentá-las):**
 
- 1. Comentar com suas palavras o primeiro trecho do livro Software Engineering at Google, Oreilly. (vou postar abaixo)
- 2. Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.(vou postar abaixo)
- 3. Listar e explicar 3 exemplos de tradeoffs
+**1. Comentar com suas palavras o primeiro trecho do livro Software Engineering at Google, Oreilly. (vou postar abaixo)**
+
+**2. Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.(vou postar abaixo)**
+
+**3. Listar e explicar 3 exemplos de tradeoffs**
 
 
 Oque é engenharia de sortwear? (lousa do professor)
+
 -Programação+Tempo+Escalabilidade+TradOff
 
-TradOff: Entregar uma coisa por outra. 
-Exemplo: -Ter a portabilidade do java para rodar em vários programas, porém, terá uma complexidade maior para SER DESENVOLVIDO. Uma troca equivalente!
+**TradOff:** Entregar uma coisa por outra. 
+
+**Exemplo:** 
+-Ter a portabilidade do java para rodar em vários programas, porém, terá uma complexidade maior para SER DESENVOLVIDO. Uma troca equivalente!
         
-        -Banco do Brazil (não usava um linguagem de programação escalonavel): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.
+-Banco do Brazil (não usava um linguagem de programação escalonavel): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.
         
-       -Matematicos usando python para desenvolver sistemas para os ajudarem, porém, é muito lento, assim tendo que adiconar C++ para poder rodar mais facilmente. Dois trabalhos
+ -Matematicos usando python para desenvolver sistemas para os ajudarem, porém, é muito lento, assim tendo que adiconar C++ para poder rodar mais facilmente. Dois trabalhos
 
 
 
 
-#ATIVIDADE 01:
-TRECHO 01: 
+# ATIVIDADE 01:
+
+
+## TRECHO 01: 
 "O que exatamente queremos dizer com engenharia de software? O que distingue "engenharia de software" de "programação" ou "ciência da computação"? E por que o Google teria uma perspectiva única a adicionar ao corpo de literatura de engenharia de software escrita nos últimos 50 anos?
 
 Os termos "programação" e "engenharia de software" têm sido usados de forma intercambiável por um bom tempo em nossa indústria, embora cada termo tenha ênfases e implicações diferentes. Os estudantes universitários tendem a estudar ciência da computação e conseguir empregos escrevendo código como "programadores".
@@ -34,7 +41,7 @@ RESOLUÇÃO DO PENSAMENTO:
 
 
 
-TRECHO 02: 
+## TRECHO 02: 
 "Programação ao Longo do Tempo
 
 Proponhamos que “engenharia de software” não se limite apenas ao ato de escrever código, mas inclua todas as ferramentas e processos que uma organização usa para construir e manter esse código ao longo do tempo. Quais práticas uma organização de software pode introduzir para manter seu código valioso a longo prazo? Como os engenheiros podem tornar uma base de código mais sustentável e a própria disciplina de engenharia de software mais rigorosa? Não temos respostas definitivas para essas perguntas, mas esperamos que a experiência coletiva do Google ao longo das últimas duas décadas ilumine possíveis caminhos para encontrar essas respostas.
@@ -52,12 +59,11 @@ Bom, levando em consideração a frase dito acima, devemos tratar a enhgeharia e
 
 
 
-21/02/2025
-```
+# 21/02/2025
 
 
 
-Atividade 4 - Classe UML
+## Atividade 4 - Classe UML (não consegui)
 Classe UML - Loja Eletrônicos
 
 
@@ -69,7 +75,7 @@ Classe UML
 
 
 
-Atividade 5 - Java
+## **Atividade 5 - Java**
 Classe Principal - LojaEletrônicos Arquivo: LojaEletrônicos.java
 
 ```java
@@ -109,7 +115,7 @@ public class LojaEletronicos {
 
 
 
-Classe Celular Arquivo: Celular.java
+## **Classe Celular Arquivo: Celular.java**
 
 ```java
 
@@ -177,7 +183,7 @@ public class Celular {
 
 
 
-Atividade 6 - Testes
+## **Atividade 6 - Testes**
 Classe LojaEletronicoTest
 
 ```java
