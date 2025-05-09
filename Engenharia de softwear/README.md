@@ -64,7 +64,7 @@ Bom, levando em consideração a frase dito acima, devemos tratar a enhgeharia e
 
 
 ## Atividade 4 - Classe UML (não consegui)
-Classe UML - Loja Eletrônicos
+Classe UML - Loja lIVROS
 
 
 Classe UML
