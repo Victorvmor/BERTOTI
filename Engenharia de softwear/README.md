@@ -1,27 +1,11 @@
 # **AULA 01 - (14/02/2025)**
-# **Crie um repositório chamado "bertoti" -> pasta "engenhariadesoftware" -> arquivo "readme.md" e faça as seguintes atividades (já vou comentá-las):**
+# **Crie um repositório chamado "bertoti" -> pasta "engenhariadesoftware" -> arquivo "readme.md" e faça as seguintes atividades :**
 
-**1. Comentar com suas palavras o primeiro trecho do livro Software Engineering at Google, Oreilly. (vou postar abaixo)**
+#**1. Comentar com suas palavras o primeiro trecho do livro Software Engineering at Google, Oreilly. **
 
-**2. Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.(vou postar abaixo)**
+#**2. Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.**
 
-**3. Listar e explicar 3 exemplos de tradeoffs**
-
-
-Oque é engenharia de sortwear? (lousa do professor)
-
--Programação+Tempo+Escalabilidade+TradOff
-
-**TradOff:** Entregar uma coisa por outra. 
-
-**Exemplo:** 
--Ter a portabilidade do java para rodar em vários programas, porém, terá uma complexidade maior para SER DESENVOLVIDO. Uma troca equivalente!
-        
--Banco do Brazil (não usava um linguagem de programação escalonavel): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.
-        
- -Matematicos usando python para desenvolver sistemas para os ajudarem, porém, é muito lento, assim tendo que adiconar C++ para poder rodar mais facilmente. Dois trabalhos
-
-
+#**3. Listar e explicar 3 exemplos de tradeoffs**
 
 
 # ATIVIDADE 01:
@@ -53,6 +37,19 @@ O livro enfatiza três princípios fundamentais que acreditamos que as organiza�
 RESOLUÇÃO DO PENSAMENTO:
 Bom, levando em consideração a frase dito acima, devemos tratar a enhgeharia e softwear como qualquer outra engenharia, assim adionando normas de estrutura como exemplo, forçano muitos a ja saberem como agir para atender os pontos ditos acimas, manutenção etc.
 
+## ATIVIDADE 03:
+Oque é engenharia de sortwear? (lousa do professor)
+
+-Programação+Tempo+Escalabilidade+TradOff
+
+**TradOff:** Entregar uma coisa por outra. 
+
+**3 Exemplo DE TRADEOFFS:** 
+**-Ter a portabilidade do java para rodar em vários programas, porém, terá uma complexidade maior para SER DESENVOLVIDO. Uma troca equivalente!**
+        
+**-Banco do Brazil (não usava um linguagem de programação escalonavel): Pouca complexidade, barata, porém pouca escalabilidade. Ou seja, transações podem sofrer erro mais facilmente.**
+        
+**-Matematicos usando python para desenvolver sistemas para os ajudarem, porém, é muito lento, assim tendo que adiconar C++ para poder rodar mais facilmente. Dois trabalhos**
 
 
 
@@ -69,6 +66,7 @@ Classe UML - Loja lIVROS
 
 Classe UML
 
+![LojaLivro](https://github.com/user-attachments/assets/600b3a5c-a976-4ef0-8586-343d39de74b4)
 
 
 
