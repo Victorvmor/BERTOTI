@@ -76,37 +76,90 @@ Classe UML
 
 
 ## **Atividade 5 - Java**
-Classe Principal - LojaEletrônicos Arquivo: LojaEletrônicos.java
+package loja;
 
-```java
+public class Livro {
+	private String titulo;
+	private String autor;
+	private String genero;
+	private int paginas;
+	private double preco;
+
+	public Livro(String titulo, String autor, String genero, int paginas, double preco) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.genero = genero;
+		this.paginas = paginas;
+		this.preco = preco;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public int getPaginas() {
+		return paginas;
+	}
+
+	public void setPaginas(int paginas) {
+		this.paginas = paginas;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+}
+
+
+
+## **Classe Loja Arquivo: LojaLivros.java**
+
 package loja;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class LojaEletronicos {
+public class LojaLivros {
 
-	// Lista de objetos privada criada para armazenar os tipos de celulares da loja
+	private List<Livro> livros = new LinkedList<Livro>();
 
-	private List<Celular> celulares = new LinkedList<Celular>();
-
-	// Metodo para cadastrar um celular na lista
-
-	public void cadastrarCelular(Celular celular) {
-		celulares.add(celular);
+	public void cadastrarLivro(Livro livro) {
+		livros.add(livro);
 	}
 
-	public List<Celular> getCelular() {
-		return celulares;
+	public List<Livro> getLivros() {
+		return livros;
 	}
 
-	// Encontrar o celular dentro da lista privada
-
-	public List<Celular> encontrarCelular(String nome, String so) {
-		List<Celular> encontrados = new LinkedList<Celular>();
-		for(Celular celular: celulares) {
-			if(celular.getNome().equals(nome) && (celular.getSo().equals(so))) {
-				encontrados.add(celular);
+	public List<Livro> encontrarLivro(String titulo, String autor) {
+		List<Livro> encontrados = new LinkedList<Livro>();
+		for (Livro livro : livros) {
+			if (livro.getTitulo().equals(titulo) && livro.getAutor().equals(autor)) {
+				encontrados.add(livro);
 			}
 		}
 		return encontrados;
@@ -114,80 +167,7 @@ public class LojaEletronicos {
 }
 
 
-
-## **Classe Celular Arquivo: Celular.java**
-
-```java
-
-package loja;
-
-import java.util.List;
-
-public class Celular {
-		private String nome;
-		private String so;
-		private String marca;
-		private String cor;
-		private double preco;
-		
-	//	//Criado o metodo construtor, definido como publico
-		public Celular(String nome, String so, String marca, String cor, double preco) {
-			this.nome = nome;
-			this.so = so;
-			this.marca = marca;
-			this.cor = cor;
-			this.preco = preco;
-		}
-		
-		public String getNome() {
-			return nome;
-		}
-
-		public void setNome(String nome) {
-			this.nome = nome;
-		}
-		
-		public String getSo() {
-			return so;
-		}
-		public void setSo(String so) {
-			this.so = so;
-		}
-		
-		public String getMarca() {
-			return marca;
-		}
-		
-		public void setMarca(String marca) {
-			this.marca = marca;
-		}
-		
-		public String getCor() {
-			return cor;
-		}
-		
-		public void setCor(String cor) {
-			this.cor = cor;
-		}
-		
-		public double getPreco() {
-			return preco;
-		}
-		
-		public void setPreco(double preco) {
-			this.preco = preco;
-		}
-	
-}
-```
-
-
-
 ## **Atividade 6 - Testes**
-Classe LojaEletronicoTest
-
-```java
-
 package loja;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -196,31 +176,25 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-class LojaEletronicosTest {
+class LojaLivrosTest {
 
 	@Test
 	void test() {
-		LojaEletronicos loja = new LojaEletronicos();
-		
-		//Criando objetos para cadastrar 
-		
-		Celular Samsung = new Celular ("S25","Android", "Samsung", "Azul Marinho", 1900.99);
-		Celular Apple = new Celular("Iphone 15 Pro Max","IOS", "Apple", "Branco", 5699.99);
-		
-		//Processo de novos celulares
-		loja.cadastrarCelular(Samsung);
-		loja.cadastrarCelular(Apple);
-		
-		//Verificando o cadastro dos celulares
-		assertEquals(loja.getCelular().size(), 2);
-		
-		List<Celular> encontradosSamsung = loja.encontrarCelular("S25", "Android");
-		List<Celular> encontradosApple = loja.encontrarCelular("Iphone 15 Pro Max", "IOS");
-		
-		assertEquals(encontradosSamsung.get(0).getMarca(), "Samsung");
-		assertEquals(encontradosApple.get(0).getCor(), "Branco");
-			
-	}
+		LojaLivros loja = new LojaLivros();
 
+		Livro livro1 = new Livro("Dom Casmurro", "Machado de Assis", "Romance", 256, 29.90);
+		Livro livro2 = new Livro("A Revolução dos Bichos", "George Orwell", "Fábula", 112, 19.99);
+
+		loja.cadastrarLivro(livro1);
+		loja.cadastrarLivro(livro2);
+
+		assertEquals(loja.getLivros().size(), 2);
+
+		List<Livro> encontrados1 = loja.encontrarLivro("Dom Casmurro", "Machado de Assis");
+		List<Livro> encontrados2 = loja.encontrarLivro("A Revolução dos Bichos", "George Orwell");
+
+		assertEquals(encontrados1.get(0).getGenero(), "Romance");
+		assertEquals(encontrados2.get(0).getPaginas(), 112);
+	}
 }
 ```
