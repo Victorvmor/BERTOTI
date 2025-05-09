@@ -76,6 +76,7 @@ Classe UML
 
 
 ## **Atividade 5 - Java**
+```java
 package loja;
 
 public class Livro {
@@ -134,10 +135,10 @@ public class Livro {
 	}
 }
 
-
+```
 
 ## **Classe Loja Arquivo: LojaLivros.java**
-
+```java
 package loja;
 
 import java.util.LinkedList;
@@ -165,9 +166,11 @@ public class LojaLivros {
 		return encontrados;
 	}
 }
-
+```
 
 ## **Atividade 6 - Testes**
+
+```java
 package loja;
 
 import static org.junit.jupiter.api.Assertions.*;
