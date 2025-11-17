@@ -1,28 +1,29 @@
-package com.example.demofilmes;
+package com.example.demo_filmes;
 
+// 1. Importe as anotações do Jakarta Persistence (JPA)
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity // 2. Diz que esta classe é uma tabela no banco
 public class Filme {
 
+    @Id // 3. Diz que este campo é a Chave Primária (Primary Key)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 4. Diz ao banco para gerar o ID automaticamente
     private Long id;
+
     private String titulo;
     private String diretor;
     private Integer anoLancamento;
     private String genero;
 
-    // Construtor vazio (boa prática)
+    // 5. O construtor vazio é OBRIGATÓRIO para o JPA
     public Filme() {}
 
-    // Construtor para facilitar a criação de dados falsos
-    public Filme(Long id, String titulo, String diretor, Integer anoLancamento, String genero) {
-        this.id = id;
-        this.titulo = titulo;
-        this.diretor = diretor;
-        this.anoLancamento = anoLancamento;
-        this.genero = genero;
-    }
+    // O construtor com dados não é mais necessário (vamos apagar o do controller)
 
-    // --- Getters e Setters (Necessários para o Spring) ---
-    // (Você pode gerar na IDE com Alt+Insert -> Getters and Setters)
-
+    // --- Getters e Setters (Exatamente os mesmos de antes) ---
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getTitulo() { return titulo; }
