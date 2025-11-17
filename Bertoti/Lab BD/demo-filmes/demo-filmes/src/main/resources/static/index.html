@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmesFlix - Seu Catálogo</title>
+
+    <style>
+        /* --- Tema Base (Netflix Dark) --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- Títulos --- */
+        h1, h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #E50914; /* Vermelho Netflix */
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* 40px */
+        }
+
+        h1 > span {
+            color: #E50914;
+        }
+
+        /* --- Formulário Moderno --- */
+        form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Duas colunas */
+            gap: 15px; /* Espaço entre os campos */
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 95%;
+            padding: 12px;
+            background-color: #333;
+            border: 1px solid #555;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        /* --- Botões (Netflix Style) --- */
+        button {
+            background-color: #E50914;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #f6121d;
+        }
+
+        button#btn-cancelar {
+            background-color: #555;
+        }
+
+        button#btn-cancelar:hover {
+            background-color: #777;
+        }
+
+        /* Coloca os botões na mesma linha */
+        .form-botoes {
+            grid-column: 1 / -1; /* Ocupa as duas colunas */
+            display: flex;
+            gap: 10px;
+        }
+
+        /* --- O GRID DE FILMES (A Mágica) --- */
+        /* Trocamos a <table> por um Grid de Cards */
+        #filmes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsivo! */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* --- O CARD (Cartão do Filme) --- */
+        .filme-card {
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Empurra os botões para baixo */
+        }
+
+        .filme-card-info {
+            padding: 20px;
+        }
+
+        .filme-card h3 { /* Título do Filme */
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .filme-card p {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin: 5px 0;
+        }
+
+        .filme-card-info span { /* "Diretor", "Ano", etc. */
+            font-weight: bold;
+            color: #ddd;
+        }
+
+        /* Ações do Card (Editar/Excluir) */
+        .filme-card-acoes {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .card-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .card-btn.edit:hover {
+            color: #5bc0de; /* Azul para Editar */
+        }
+
+        .card-btn.delete:hover {
+            color: #E50914; /* Vermelho para Excluir */
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Filmes<span>Flix</span></h1>
+<h2>Adicionar / Editar Filme</h2>
+
+<form id="form-filme">
+    <input type="hidden" id="filmeId">
+
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="diretor" placeholder="Diretor" required>
+    <input type="number" id="anoLancamento" placeholder="Ano de Lançamento" required>
+    <input type="text" id="genero" placeholder="Gênero" required>
+
+    <div class="form-botoes">
+        <button type="submit">Salvar</button>
+        <button type="button" id="btn-cancelar">Cancelar Edição</button>
+    </div>
+</form>
+
+<hr style="border: 1px solid #333;">
+
+<h2>Meu Catálogo</h2>
+
+<div id="filmes-grid">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
